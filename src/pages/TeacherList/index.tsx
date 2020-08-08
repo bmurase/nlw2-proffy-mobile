@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import { View, ScrollView, Text, TextInput } from "react-native";
 import PageHeader from "../../components/PageHeader";
 import AsyncStorage from "@react-native-community/async-storage";
@@ -9,7 +9,6 @@ import TeacherItem, { TeacherProps } from "../../components/TeacherItem";
 import api from "../../services/api";
 
 import styles from "./styles";
-import { useFocusEffect } from "@react-navigation/native";
 
 const TeacherList: React.FC = () => {
   const [isFiltersVisible, setIsFiltersVisible] = useState(true);
