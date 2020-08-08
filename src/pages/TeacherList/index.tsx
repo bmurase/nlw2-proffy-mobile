@@ -34,10 +34,6 @@ const TeacherList: React.FC = () => {
     });
   }, [favorites]);
 
-  useFocusEffect(() => {
-    loadFavorites();
-  });
-
   async function handleSearch() {
     loadFavorites();
 
